@@ -1,6 +1,6 @@
 import { IMessageQueue } from '../message-queue.interface';
-import { EmbeddedMessageQueue } from '../embedded-message-queue';
-import { MessageSerializer } from '../message-serializer';
+import { EmbeddedMessageQueue } from './embedded-message-queue';
+import { MessageSerializer } from './message-serializer';
 
 export class LocalMessageQueueProvider {
     public create(): Promise<IMessageQueue> {

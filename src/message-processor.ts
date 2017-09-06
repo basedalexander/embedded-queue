@@ -1,5 +1,5 @@
 import { IMessage, IMessageQueue } from './message-queue.interface';
-import { IMessageQueueProvider } from './message-queue-provider/message-queue-provider.interface';
+import { IMessageQueueProvider } from './message-queue-provider.interface';
 
 export class MessageProcessor {
     private messageQueue: IMessageQueue;

@@ -1,4 +1,4 @@
-import { IMessage } from './message-queue.interface';
+import { IMessage } from '../message-queue.interface';
 
 export class MessageSerializer {
     public serialize(message: IMessage): string {

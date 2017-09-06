@@ -1,4 +1,4 @@
-import { IMessage, IMessageQueue, QueueMessageSubscriber } from './message-queue.interface';
+import { IMessage, IMessageQueue, QueueMessageSubscriber } from '../message-queue.interface';
 import { MessageSerializer } from './message-serializer';
 
 export class EmbeddedMessageQueue implements IMessageQueue {
@@ -51,7 +51,7 @@ export class EmbeddedMessageQueue implements IMessageQueue {
                 }
             })
             .catch(error => {
-                // todo handle error
+                return;
             })
     }
 }
